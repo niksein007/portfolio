@@ -1,0 +1,25 @@
+nav{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    a{
+        background-color: rgba(255, 228, 196,0.5);
+        border: 1px solid gray;
+        text-align: center;
+        border-radius: 5px;
+        min-height: 15px;
+    }
+    a:hover{
+        background-color: cornsilk;
+    }
+
+    #logo{
+        height: 50px;
+        border-radius: 10px;
+        padding-top: 25px;
+        font-family: fantasy;
+        font-size: x-large;
+        font-weight: bolder;
+    }
+}
