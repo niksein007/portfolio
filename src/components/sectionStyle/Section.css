@@ -1,6 +1,9 @@
 section {
+  position: relative;
   width: 100vw;
   height: 400px;
   background-color: rgba(100, 149, 237, 0.5);
+  color: white;
+  overflow: scroll;
 }
 /*# sourceMappingURL=Section.css.map */

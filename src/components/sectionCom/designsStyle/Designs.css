@@ -1,1 +1,7 @@
-/* No CSS *//*# sourceMappingURL=Designs.css.map */
+iframe {
+  width: 100vw;
+  border: none;
+  height: 250px;
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Designs.css.map */
