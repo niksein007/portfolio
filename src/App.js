@@ -7,16 +7,37 @@ import Footer from './components/Footer';
 import './appStyle/App.css';
 import {BrowserRouter,Switch,Route} from 'react-router-dom'
 
-function App() {
+class App extends React.Component {
+
+	state ={
+		iframes:[
+			'https://niksein007.github.io/calculator/',
+			'https://niksein007.github.io/',
+			'https://niksein007.github.io/dicegame/'
+			
+	]
+	}
+
+	render(){
+	const iframes = this.state.iframes.map((iframe,index)=>{
+		return <iframe key={index} title={`num${index}`} src={iframe}> </iframe>
+	})
+
 	return (
 		<div className="App">
 		<BrowserRouter>
 			<Header logo={logo} />
-			<Section bulbs={bulbs} switch ={Switch} route ={Route}/>
+			<Section
+			 bulbs={bulbs} 
+			 switch ={Switch}
+			 route ={Route}
+			 iframes={iframes}
+			 />
 			<Footer />
-			</BrowserRouter>
+			</BrowserRouter >
 		</div>
 	);
+	}
 }
 
 export default App;

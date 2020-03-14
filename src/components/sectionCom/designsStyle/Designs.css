@@ -1,7 +1,12 @@
-iframe {
+.iframes {
+  overflow: hidden;
+  width: 95vw;
+}
+
+.iframes iframe {
   width: 100vw;
   border: none;
-  height: 250px;
-  margin-bottom: 10px;
+  height: 300px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=Designs.css.map */

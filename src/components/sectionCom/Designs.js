@@ -1,14 +1,13 @@
 import React from 'react'
 import './designsStyle/Designs.css'
 
-function Designs() {
+function Designs(props) {
     return (
-        <div>
+        <div className='iframes'>
         
-            <iframe src="https://niksein007.github.io/" title="one"></iframe>
+            {props.iframes}
 
     
-            <iframe src="https://niksein007.github.io/calculator/" title="two"></iframe>
         </div>
     )
 }
