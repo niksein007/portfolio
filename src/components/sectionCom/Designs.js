@@ -1,18 +1,12 @@
-import React from 'react'
-import './designsStyle/Designs.css'
+import React from 'react';
+import './designsStyle/Designs.css';
 
 function Designs(props) {
-    return (
-        <div className='iframes'>
-        
-        
-
-    
-            <iframe src="https://niksein007.github.io/calculator/" title="two"></iframe>
-            <iframe src="https://niksein007.github.io/dicegame/" title="two"></iframe>
-            <iframe src="https://niksein007.github.io/instagramclone" title="one"></iframe>
-        </div>
-    )
+	return <div className="iframes">
+	{/* {
+		props.iframes} */}
+		
+		</div>;
 }
 
-export default Designs
+export default Designs;

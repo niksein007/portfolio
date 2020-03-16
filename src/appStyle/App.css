@@ -1,4 +1,30 @@
-.App {
+.container {
   width: 100vw;
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: section;
+}
+
+.header {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+.App {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'header header' 'header . ' 'section' 'footer';
 }
 /*# sourceMappingURL=App.css.map */

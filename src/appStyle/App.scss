@@ -1,4 +1,25 @@
-.App{
+.container{
     width: 100vw;
-   
 }
+.header{
+    grid-area: header;
+}
+.section{
+    grid-area: section;
+}
+.header{
+    grid-area: footer;
+}
+
+
+.App{
+    display: grid;
+    grid-template-areas: 
+    'header header'
+    'header . '
+    'section'
+    'footer'
+    ;
+   
+   
+} 
