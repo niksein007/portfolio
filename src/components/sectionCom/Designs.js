@@ -1,9 +1,9 @@
 import React from 'react'
 import './designsStyle/Designs.css'
 
-function Designs() {
+function Designs(props) {
     return (
-        <div>
+        <div className='iframes'>
         
         
 

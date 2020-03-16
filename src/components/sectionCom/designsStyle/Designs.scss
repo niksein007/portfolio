@@ -1,6 +1,13 @@
-iframe{
-    width: 100vw;
-    border: none;
-    height: 250px;
-    margin-bottom: 10px;
+.iframes {
+    overflow: hidden;
+    width: 95vw;
+    // height:290px ;
+
+    iframe {
+        width: 100vw;
+        border: none;
+        height: 300px;
+        margin-top: 10px;
+    }
+
 }

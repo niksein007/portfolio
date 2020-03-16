@@ -12,7 +12,7 @@ const Section = (props) => {
         {/* <img src={props.bulbs} alt="bulbs" /> */}
 
         <props.switch>
-            <props.route path='/' exact  component={Designs} />
+            <props.route path='/' exact  component={()=>{ return< Designs iframes={props.iframes} />}} />
             <props.route path='/about'  component={About} />
             <props.route path='/contact'   component={Contact} />
 
