@@ -1,12 +1,13 @@
 import React from 'react';
-import './designsStyle/Designs.css';
+import './projectsStyle/Projects.css';
 
-function Designs(props) {
+function Projects(props) {
 	return <div className="iframes">
 	{/* {
 		props.iframes} */}
+		some designs
 		
 		</div>;
 }
 
-export default Designs;
+export default Projects;

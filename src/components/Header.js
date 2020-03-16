@@ -2,8 +2,9 @@ import React from 'react'
 import './headerStyle/Header.css'
 import {Link} from 'react-router-dom'
 
-const Header = (props) => {
+  const Header = (props) => {
     return (
+        <header>
        <nav className="header">
        <div id="logo">niksein</div>
 
@@ -12,8 +13,10 @@ const Header = (props) => {
        <Link to='about'> <div>about</div></Link>
 
        <Link to='contact'> <div> contact</div></Link>
-           
-       </nav>
+       <div onClick={props.asideHandler} >project links</div>
+           </nav>
+       </header>
+
     ) 
 }
 

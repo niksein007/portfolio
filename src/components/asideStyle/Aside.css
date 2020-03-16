@@ -1,0 +1,15 @@
+aside {
+  display: none;
+  border: 1px solid black;
+  width: 50%;
+  height: 100%;
+}
+
+aside a {
+  display: block;
+}
+
+.display {
+  display: block;
+}
+/*# sourceMappingURL=Aside.css.map */

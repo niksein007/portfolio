@@ -4,7 +4,7 @@ import './aboutStyle/About.css'
 const About = () => {
     return (
         <div>
-        am a software developer
+       <p>am a software developer</p> 
             
         </div>
     )

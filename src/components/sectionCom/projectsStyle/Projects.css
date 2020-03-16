@@ -1,11 +1,11 @@
 .iframes {
   overflow: hidden;
-  width: 95vw;
+  width: 95%;
 }
 
 .iframes iframe {
-  width: 100vw;
+  width: 100%;
   height: 600px;
   margin-top: 10px;
 }
-/*# sourceMappingURL=Designs.css.map */
+/*# sourceMappingURL=Projects.css.map */

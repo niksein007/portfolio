@@ -1,6 +1,5 @@
 section {
-  width: 100vw;
-  height: 400px;
+  min-height: 400px;
   color: white;
   overflow: scroll;
 }

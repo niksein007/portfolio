@@ -1,8 +1,8 @@
 import React from 'react';
 import About from './sectionCom/About';
 import Contact from './sectionCom/Contact';
-import Designs from './sectionCom/Designs';
 import './sectionStyle/Section.css';
+import Projects from './sectionCom/Projects';
 
 const Section = (props) => {
 	// console.log(props.switch);
@@ -15,7 +15,7 @@ const Section = (props) => {
 					path="/"
 					exact
 					component={() => {
-						return <Designs iframes={props.iframes} />;
+						return <Projects iframes={props.iframes} />;
 					}}
 				/>
 				<props.route path="/about" component={About} />

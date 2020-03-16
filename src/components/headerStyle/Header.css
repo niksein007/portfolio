@@ -1,5 +1,4 @@
-nav {
-  width: 100vw;
+header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,7 +8,7 @@ nav {
           flex-direction: column;
 }
 
-nav div {
+header nav div {
   background-color: rgba(255, 228, 196, 0.5);
   border: 1px solid gray;
   text-align: center;
@@ -17,11 +16,11 @@ nav div {
   min-height: 15px;
 }
 
-nav div:hover {
+header nav div:hover {
   background-color: cornsilk;
 }
 
-nav #logo {
+header nav #logo {
   height: 50px;
   border-radius: 10px;
   padding-top: 25px;
