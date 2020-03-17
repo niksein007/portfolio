@@ -33,7 +33,7 @@ class App extends React.Component {
 			 iframes={iframes}
 			 />
 			<Footer />
-			</BrowserRouter >
+			</BrowserRouter>
 		</div>
 	);
 	}
