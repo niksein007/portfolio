@@ -1,11 +1,6 @@
 section {
   width: 100vw;
-<<<<<<< HEAD
-  height: 600px;
-  background-color: rgba(100, 149, 237, 0.5);
-=======
   height: 400px;
->>>>>>> cd92f43316f6eaf87039ae703e73e46b466e688e
   color: white;
   overflow: scroll;
 }
