@@ -3,7 +3,7 @@ import './headerStyle/Header.css'
 import {Link} from 'react-router-dom'
 
   const Header = (props) => {
-    return (
+    return ( 
         <header>
        <nav className="header">
        <div id="logo">niksein</div>
