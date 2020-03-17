@@ -5,8 +5,9 @@
 
 .iframes iframe {
   width: 100vw;
-  border: none;
-  height: 300px;
+  margin: auto;
+  border: 1px solid black;
+  height: 600px;
   margin-top: 10px;
 }
 /*# sourceMappingURL=Designs.css.map */

@@ -12,7 +12,6 @@ class App extends React.Component {
 	state ={
 		iframes:[
 			'https://niksein007.github.io/calculator/',
-			'https://niksein007.github.io/',
 			'https://niksein007.github.io/dicegame/'
 			
 	]
