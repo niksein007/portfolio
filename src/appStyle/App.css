@@ -1,3 +1,13 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  margin: 0;
+}
+
 .App .header {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -6,15 +16,10 @@
   background-color: white;
 }
 
-.App .aside {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: aside;
-}
-
 .App .section {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: section;
 }
 
@@ -28,10 +33,8 @@
 .App .appGrid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: ' header header ' ' aside section' ' footer footer ';
-  background-color: yellowgreen;
-  width: 83.33%;
+      grid-template-areas: " header header " " section section" " footer footer ";
+  background-color: whitesmoke;
   height: 60%;
-  margin: auto;
 }
 /*# sourceMappingURL=App.css.map */

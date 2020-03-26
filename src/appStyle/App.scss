@@ -1,33 +1,30 @@
-.App{
-    // width: 100vw;
-
-.header{
+* {
+  box-sizing: border-box;
+}
+.App {
+  width: 100vw;
+  margin: 0;
+  
+  .header {
     grid-area: header;
-    background-color:white;
-
-}
-.aside{
-    grid-area:aside;
-}
-.section{
+    background-color: white;
+  }
+  
+  .section {
     grid-area: section;
-}
-.footer{
+  }
+  .footer {
     grid-area: footer;
-}
+  }
 
-
-.appGrid{
+  .appGrid {
     display: grid;
-  grid-template-areas: 
-  ' header header '
-  ' aside section'
-  ' footer footer ';
-    
-   
-   background-color: yellowgreen;
-   width: 83.33%;
-   height: 60%;
-   margin: auto;
-} 
+    grid-template-areas:
+      " header header "
+      " section section"
+      " footer footer ";
+
+    background-color: whitesmoke;
+    height: 60%;
+  }
 }

@@ -1,13 +1,15 @@
-import React from 'react';
-import './projectsStyle/Projects.css';
+import React from "react";
+import "./projectsStyle/Projects.css";
 
 function Projects(props) {
-	return <div className="iframes">
-	{/* {
-		props.iframes} */}
-		some designs
-		
-		</div>;
+  return (
+    <div className="projects">
+		<p>
+      mark pearce an aspiring web developer kindly peruse throug my project
+      please clik on the menu icon to see the indivial projects</p>
+     <div className='iframes'>{props.iframes}</div> 
+    </div>
+  );
 }
 
 export default Projects;

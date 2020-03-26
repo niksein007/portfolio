@@ -1,11 +1,13 @@
+section {
+  overflow: hidden;
+  color: black;
+  min-height: 450px;
+  width: 100vw;
+ 
+  margin-bottom: 80px;
+}
+@media(min-width:600px){
 section{
-
-    
-   min-height:400px ;
-    // background-color: rgba(100, 149, 237,0.5);
-    color: white;
-    overflow: scroll;
-    
-    
-   
+  // height: auto;
+}
 }

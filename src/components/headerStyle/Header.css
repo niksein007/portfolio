@@ -1,31 +1,122 @@
 header nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  background-color: #372e4b;
+  color: white;
+  height: 60px;
 }
 
-header nav div {
-  background-color: rgba(255, 228, 196, 0.5);
-  border: 1px solid gray;
-  text-align: center;
-  border-radius: 5px;
-  min-height: 15px;
+header nav .anchor {
+  text-decoration: none;
 }
 
-header nav div:hover {
-  background-color: cornsilk;
+header nav #menu {
+  overflow: hidden;
+  padding: 0;
+  margin-top: 10px;
+  margin-left: 45%;
+  margin-bottom: 5px;
+  outline: none;
+  border: none;
+  height: 40px;
+  background-color: #f5f2f0;
+}
+
+header nav #menu:hover {
+  background-color: darkolivegreen;
+  cursor: pointer;
+}
+
+header nav .menuContent {
+  background-color: black;
+  height: 7px;
+  width: 35px;
+  margin: 7px 0;
 }
 
 header nav #logo {
-  height: 50px;
-  border-radius: 10px;
-  padding-top: 25px;
-  font-family: fantasy;
-  font-size: x-large;
   font-weight: bolder;
+  font-size: xx-large;
+  font-family: Book Antiqua;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+
+header nav #logo:hover {
+  background-color: #90cacc;
+}
+
+header nav .showLinksCon {
+  display: block;
+  position: absolute;
+  right: 0;
+  background-color: rgba(165, 42, 42, 0.7);
+  margin-top: 60px;
+  width: 30%;
+  height: 100vh;
+}
+
+header nav .hideLinksCon {
+  display: none;
+}
+
+header .links {
+  display: block;
+  color: white;
+  margin-top: 5px;
+  text-align: center;
+  border: 1px solid whitesmoke;
+  border-left: 1px solid rgba(165, 42, 42, 0.7);
+  border-right: 1px solid rgba(165, 42, 42, 0.7);
+}
+
+header .links:hover {
+  background-color: #90cacc;
+}
+
+header .one {
+  margin-top: 0;
+}
+
+@media (min-width: 600px) {
+  nav #menu {
+    display: none;
+  }
+  nav .active {
+    background-color: green;
+  }
+  nav #linkCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    background-color: rgba(55, 46, 75, 0);
+    height: auto;
+    margin-top: inherit;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  nav #linkCon .links {
+    font-size: 25px;
+    height: 50px;
+    text-align: center;
+    margin-left: 10%;
+    padding-top: 5px;
+    border: none;
+  }
+  nav #linkCon .one {
+    margin-top: 5px;
+    display: none;
+  }
 }
 /*# sourceMappingURL=Header.css.map */

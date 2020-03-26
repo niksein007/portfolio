@@ -1,28 +1,136 @@
+header {
 
-header{
-    
-nav{
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    background-color: rgba(55, 46, 75, 1);
 
-    div{
-        background-color: rgba(255, 228, 196,0.5);
-        border: 1px solid gray;
-        text-align: center;
-        border-radius: 5px;
-        min-height: 15px;
+    color: white;
+    height: 60px;
+   .anchor{
+     text-decoration: none;
+    //  text-align: center;
+   }
+   
+    #menu {
+      
+      overflow: hidden;
+      padding: 0;
+      margin-top: 10px;
+      margin-left: 45%;
+      margin-bottom: 5px;
+      outline: none;
+      border: none;
+      height: 40px;
+      background-color: rgb(245, 242, 240);
     }
-    div:hover{
-        background-color: cornsilk;
+    #menu:hover {
+      background-color: darkolivegreen;
+      cursor: pointer;
+    }
+    .menuContent{
+      
+      background-color: rgb(0, 0, 0);
+      height: 7px;
+      width: 35px;
+      margin: 7px 0;
+    }
+//styling the span that holds the logo
+    #logo {
+      font-weight: bolder;
+      font-size: xx-large;
+      font-family: Book Antiqua;
+      color: white;
+      letter-spacing: 2px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-left: 5%;
+      
+    }
+    #logo:hover {
+      background-color: rgb(144, 202, 204);
+    }
+//this designs the drop down menu
+    .showLinksCon {
+      display: block;
+      position: absolute;
+      right: 0;
+      background-color: rgba(165, 42, 42, 0.7);
+      margin-top: 60px;
+      width: 30%;
+      height:100vh;
     }
 
-    #logo{  
+    .hideLinksCon {
+      display: none;
+    }
+    // .active{
+    //   background-color: red;
+    // }
+  }
+//this designs the links inside the drop down menu
+  .links {
+    display: block;
+    color: white;
+    margin-top: 5px;
+    text-align: center;
+    border: 1px solid whitesmoke;
+    border-left: 1px solid rgba(165, 42, 42, 0.7);
+    border-right: 1px solid rgba(165, 42, 42, 0.7);
+
+    // margin-left: 10%;
+  }
+  .links:hover {
+    background-color: rgb(144, 202, 204);
+  }
+  .one {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 600px) {
+  nav {
+    #menu {
+      display: none;
+    }
+
+    .active{
+      background-color: green;
+    }
+
+    #linkCon {
+      // the linCon id and linksShowCon are at the same level having to overide 
+      //the setting in linkShowCon 
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      background-color: rgba(55, 46, 75, 0.0);
+      height: auto;
+
+      margin-top: inherit;
+      margin-left: 20%;
+      margin-right: 20%;
+     
+
+      .links {
+        font-size: 25px;
         height: 50px;
-        border-radius: 10px;
-        padding-top: 25px;
-        font-family: fantasy;
-        font-size: x-large;
-        font-weight: bolder;
+        text-align: center;
+        margin-left: 10%;
+        padding-top: 5px;
+        border: none;
+      }
+      //styling the first link pHome
+      .one {
+        margin-top: 5px;
+        display: none;
+      }
     }
+
+    
+  }
 }
-}
+
+
