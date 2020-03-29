@@ -5,9 +5,9 @@ function Projects(props) {
   return (
     <div className="projects">
 		<p>
-      mark pearce an aspiring web developer kindly peruse throug my project
+      Mark Pearce an aspiring web developer kindly peruse throug my project
       please clik on the menu icon to see the indivial projects</p>
-     <div className='iframes'>{props.iframes}</div> 
+     <div className='ifCon'>{props.iframes}</div> 
     </div>
   );
 }

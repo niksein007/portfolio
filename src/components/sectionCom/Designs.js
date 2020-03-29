@@ -7,7 +7,7 @@ function Designs(props) {
 
 		<p>Below is a list of my projects. Click on the links to go directly to the website</p>
 		
-		{props.href}
+		{props.designs} 
 		</div>;
 }
 

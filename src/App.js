@@ -18,6 +18,11 @@ class App extends React.Component {
       {
         name: "Dice Game",
         url: "https://niksein007.github.io/dicegame/"
+      },
+
+      {
+        name: "Instagram clone",
+        url: "https://niksein007.github.io/instagramclone/"
       }
     ],
 
@@ -48,7 +53,7 @@ class App extends React.Component {
     //taking the url from the link prop and passing into anchors to be used
     //in the designs
 
-    const href = this.state.links.map((link, index) => {
+    const designs = this.state.links.map((link, index) => {
       return (
         <a key={index} href={link.url}>
           {link.name}
@@ -73,7 +78,7 @@ class App extends React.Component {
               <Section
                 iframes={iframes}
                 linksHandler2={this.linksHandler2}
-                href={href}
+                designs={designs}
               />{" "}
             </div>{" "}
             <div className="footer">

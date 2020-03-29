@@ -18,7 +18,7 @@ if (exclude !== 'menuContent'&&exclude !== 'menu'&& exclude !== 'linkCon'&&exclu
     anchors[i].className =anchors[i].className.replace(" active","")
   }
  e.target.className += " active"
-console.log('mark wats wrong');
+// console.log('mark wats wrong');
 
 }
 
@@ -34,7 +34,7 @@ console.log('mark wats wrong');
       
 
         <Link to="/"  id="logo"  className='anchor' >
-          niksein
+          Home
         </Link>
 {/* using the window.innerWidth to get the viewport width */}
         <div  id ='linkCon' className={this.props.display?'showLinksCon':'hideLinksCon'} 

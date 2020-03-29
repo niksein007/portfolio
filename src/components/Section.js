@@ -30,7 +30,7 @@ const Section = (props) => {
 				<Route path="/contact" component={Contact} />
 				{/* this allows the indivial projects to be displayed underneat the header  */}
 				<Route path = '/designs'  component={ ()=>{
-					return <Designs href={props.href}/>
+					return <Designs designs={props.designs}/>
 				}}/>
 			</Switch>
 		</section>

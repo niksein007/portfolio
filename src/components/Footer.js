@@ -17,7 +17,7 @@ const Footer = () => {
         <FontAwesomeIcon icon={faLinkedin}  className='icon'/>
         <FontAwesomeIcon icon={faGithubSquare}   className='icon' />
         <FontAwesomeIcon icon={faTwitterSquare} className='icon'  />
-        <FontAwesomeIcon icon={faEnvelope}  className='icon' />
+        {/* <FontAwesomeIcon icon={faEnvelope}  className='icon' /> */}
 
 
 
