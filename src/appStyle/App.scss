@@ -1,8 +1,32 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
+
+* {
+  box-sizing: border-box;
 }
-.App{
-    width: 100vw;
-   
+.App {
+  max-width: 100vw;
+  margin: 0;
+  
+  .header {
+    grid-area: header;
+    background-color: white;
+  }
+  
+  .section {
+    grid-area: section;
+  }
+  .footer {
+    grid-area: footer;
+  }
+
+  .appGrid {
+    display: grid;
+    grid-template-areas:
+      " header header "
+      " section section"
+      " footer footer ";
+
+    background-color: whitesmoke;
+    height: 60%;
+  }
 }
+

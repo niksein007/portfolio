@@ -1,0 +1,32 @@
+.projects {
+    overflow: hidden;
+    margin-top: 55px;
+    text-align: center;
+    p::first-letter{
+        font-size: x-large;
+    }
+
+    iframe {
+        overflow: hidden;
+        width: 70%;
+        margin: 0 15%;
+        height: 400px;
+        margin-bottom: 10px;
+
+        border: 1px solid black;
+    }
+
+}
+@media (min-width:600px){
+    .ifCon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+        iframe{
+            overflow-x: hidden;
+            width: 255px;
+            margin-bottom: 10px;
+
+        }
+    }
+}

@@ -1,11 +1,17 @@
 footer {
+  position: fixed;
+  bottom: 0;
   width: 100vw;
-  min-height: 80px;
-  background-color: bisque;
-  height: 30px;
-  border-radius: 5px;
+  min-height: 50px;
+  background-color: #372e4b;
   text-align: center;
   padding-top: 25px;
-  color: red;
+  color: white;
+}
+
+footer .icon {
+  font-size: xx-large;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=Footer.css.map */

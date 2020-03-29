@@ -1,10 +1,43 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
+
 }
 
 .App {
-  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+}
+
+.App .header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+  background-color: white;
+}
+
+.App .section {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: section;
+}
+
+.App .footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+.App .appGrid {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: " header header "
+ " section section"
+ " footer footer ";
+  background-color: whitesmoke;
+  height: 60%;
 }
 /*# sourceMappingURL=App.css.map */

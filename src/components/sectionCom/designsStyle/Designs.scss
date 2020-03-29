@@ -1,15 +1,11 @@
-.iframes {
-    overflow: hidden;
-    width: 95vw;
-    // height:290px ;
 
-    iframe {
-        width: 100vw;
-        margin: auto;letter-spacing: normal;
-        border: 1px solid black;
-        height: 600px;
+.designs{
+    margin-top:80px;
+    text-align: center;
+    height: 100vh;
+    a{
+        display: block;
 
         margin-top: 10px;
     }
-
 }

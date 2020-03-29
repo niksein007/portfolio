@@ -1,1 +1,19 @@
-/* No CSS *//*# sourceMappingURL=About.css.map */
+.about h2 {
+  text-align: center;
+}
+
+.about p {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.about p::first-letter {
+  color: #353153;
+  font-size: x-large;
+}
+
+.about a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=About.css.map */

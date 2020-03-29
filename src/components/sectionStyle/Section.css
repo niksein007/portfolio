@@ -1,6 +1,7 @@
 section {
+  overflow: hidden;
+  color: black;
+  min-height: 450px;
   width: 100vw;
-  height: 400px;
-  color: white;
-  overflow: scroll;
+  margin-bottom: 80px;
 }

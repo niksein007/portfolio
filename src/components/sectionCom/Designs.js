@@ -1,18 +1,14 @@
-import React from 'react'
-import './designsStyle/Designs.css'
+import React from 'react';
+ import './designsStyle/Designs.css'
+import { BrowserRouter, Switch ,Route} from 'react-router-dom';
 
 function Designs(props) {
-    return (
-        <div className='iframes'>
-        
-        
+	return <div className="designs">
 
-    
-            <iframe src="https://niksein007.github.io/calculator/" title="two"></iframe>
-            <iframe src="https://niksein007.github.io/dicegame/" title="two"></iframe>
-            <iframe src="https://niksein007.github.io/instagramclone" title="one"></iframe>
-        </div>
-    )
+		<p>Below is a list of my projects. Click on the links to go directly to the website</p>
+		
+		{props.designs} 
+		</div>;
 }
 
 export default Designs

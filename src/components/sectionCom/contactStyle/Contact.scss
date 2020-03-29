@@ -1,0 +1,60 @@
+.contact{
+    margin-top: 80px;
+    height: 100vh;
+    h2{
+        text-align: center;
+    }
+
+    label{
+      
+        
+            // color: red;
+            display: inline-block;
+            margin-left: 3%;
+            width: 30%;
+            font-size: x-large;
+    }
+        input,textarea{
+            width: 65%;
+            height: 50px;
+            border: 1px solid black;
+            margin-top: 5px;
+        }
+        textarea{
+            height: 80px;
+
+        }
+       
+    }
+
+   input[type="submit"]{
+        width: 25%;
+        margin: auto;
+        margin-top: 15px;
+        margin-left: 53%;
+        font-size: large;
+        // color: brown;
+    }
+
+
+@media(min-width:600px){
+    .contact{
+        label{
+            display: block;
+
+            // display: inline-block;
+            width: 10%;
+            font-size: x-large;
+        }
+        input,textarea{
+            width: 20%;
+            margin-left: 3%;
+            border: 1px solid black;
+        }
+    }
+    input[type="submit"]{
+display: block;
+        margin-left: 3%;
+        width: 10%;
+    }
+}

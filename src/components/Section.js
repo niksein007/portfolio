@@ -1,28 +1,40 @@
-import React from 'react'
-import About from './sectionCom/About'
-import Contact from './sectionCom/Contact'
-import Designs from './sectionCom/Designs'
-import './sectionStyle/Section.css'
+import React from 'react';
+import About from './sectionCom/About';
+import Contact from './sectionCom/Contact';
+import './sectionStyle/Section.css';
+import Projects from './sectionCom/Projects';
+import Designs from './sectionCom/Designs';
 
+
+import { Switch, Route } from 'react-router-dom';
 
 const Section = (props) => {
-    console.log(props.switch)
-    return (
-        <section className = "section">
-        {/* <img src={props.bulbs} alt="bulbs" /> */}
+	// console.log(props.switch);
+	return (
+		<section className="section"
+		//making the side nav disappear when the pointer is on the section
+		onMouseOver = { window.innerWidth <=600 ?  props.linksHandler2:undefined}
 
-        <props.switch>
-            <props.route path='/' exact  component={()=>{ return< Designs iframes={props.iframes} />}} />
-            <props.route path='/about'  component={About} />
-            <props.route path='/contact'   component={Contact} />
+		>
+			{/* <img src={props.bulbs} alt="bulbs" /> */}
 
+			<Switch>
+				<Route
+					path="/"
+					exact
+					component={() => {
+						return <Projects iframes={props.iframes} />;
+					}}
+				/>
+				<Route path="/about" component={About} />
+				<Route path="/contact" component={Contact} />
+				{/* this allows the indivial projects to be displayed underneat the header  */}
+				<Route path = '/designs'  component={ ()=>{
+					return <Designs designs={props.designs}/>
+				}}/>
+			</Switch>
+		</section>
+	);
+};
 
-        </props.switch>
-
-      
- 
-        </section>
-    )
-}
-
-export default Section
+export default Section;

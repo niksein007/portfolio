@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=Contact.css.map */
+.contact {
+  margin-top: 80px;
+  height: 100vh;
+}
+
+.contact h2 {
+  text-align: center;
+}
+
+.contact label {
+  display: inline-block;
+  margin-left: 3%;
+  width: 30%;
+  font-size: x-large;
+}
+
+.contact input, .contact textarea {
+  width: 65%;
+  height: 50px;
+  border: 1px solid black;
+  margin-top: 5px;
+}
+
+.contact textarea {
+  height: 80px;
+}
+
+input[type="submit"] {
+  width: 25%;
+  margin: auto;
+  margin-top: 15px;
+  margin-left: 53%;
+  font-size: large;
+}
+
+@media (min-width: 600px) {
+  .contact label {
+    display: block;
+    width: 10%;
+    font-size: x-large;
+  }
+  .contact input, .contact textarea {
+    width: 20%;
+    margin-left: 3%;
+    border: 1px solid black;
+  }
+  input[type="submit"] {
+    display: block;
+    margin-left: 3%;
+    width: 10%;
+  }
+}
+/*# sourceMappingURL=Contact.css.map */
