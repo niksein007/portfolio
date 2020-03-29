@@ -1,6 +1,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+
 }
 
 .App {
@@ -33,7 +34,9 @@
 .App .appGrid {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: " header header " " section section" " footer footer ";
+      grid-template-areas: " header header "
+ " section section"
+ " footer footer ";
   background-color: whitesmoke;
   height: 60%;
 }
