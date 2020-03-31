@@ -4,7 +4,7 @@ header {
   position: relative;
   z-index: 1;
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
 
   img {
     opacity: 0.5;
@@ -44,12 +44,24 @@ header {
     outline: none;
     color: white;
     border: 1px solid white;
-    font-size: 25px;
+    font-size: 20px;
+    padding: 10px;
     width: 200px;
     margin: auto;
     background-color: rgba(165, 42, 42, 0);
     margin-bottom: 24vh;
   }
+
+  #headerAnchor:hover{
+    background-color: rgba(0, 255, 255,0.5);
+  }
+  .arrow{
+    // had to give it a display inline block to enable the rotate functionality
+    //and also to keep the arrow on the same line
+    display: inline-block;
+    transform:rotate(90deg);
+  }
+ 
 }
 
 @media (min-width:600px){

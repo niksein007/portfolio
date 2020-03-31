@@ -46,11 +46,22 @@ header #headerAnchor {
   outline: none;
   color: white;
   border: 1px solid white;
-  font-size: 25px;
+  font-size: 20px;
+  padding: 10px;
   width: 200px;
   margin: auto;
   background-color: rgba(165, 42, 42, 0);
   margin-bottom: 24vh;
+}
+
+header #headerAnchor:hover {
+  background-color: rgba(0, 255, 255, 0.5);
+}
+
+header .arrow {
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 @media (min-width: 600px) {

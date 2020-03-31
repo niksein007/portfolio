@@ -7,6 +7,11 @@ footer {
   color: white;
 }
 
+footer a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
 footer .icon {
   font-size: xx-large;
   margin-left: 20px;

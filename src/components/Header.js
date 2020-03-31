@@ -4,6 +4,19 @@ import "./headerStyle/Header.css";
 import Navbar from "./headerCom/Navbar";
 
 class Header extends React.Component {
+arrow2=()=>{
+  let arrow = document.getElementById('arrow')
+  arrow.classList.remove('arrow')
+
+}
+  arrow =()=>{
+    let arrow = document.getElementById('arrow')
+
+      arrow.classList.add('arrow')
+
+ 
+
+  }
   render() {
     return (
       <header id='header'> 
@@ -17,7 +30,13 @@ class Header extends React.Component {
           <p> I am a web developer.</p>
         </div>
 
-        <a id='headerAnchor' href='#about'>View my work &rArr;</a>
+        <a 
+        id='headerAnchor' 
+        href='#about' 
+        onMouseOver={this.arrow}
+        onMouseOut={this.arrow2}
+        
+        >View my work <span id='arrow'>&rArr;</span></a>
         <Navbar
           active={this.props.active}
           linksHandler={this.props.linksHandler}
