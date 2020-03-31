@@ -3,6 +3,10 @@
   height: 100vh;
 }
 
+.contact #visible {
+  visibility: hidden;
+}
+
 .contact h2 {
   text-align: center;
 }

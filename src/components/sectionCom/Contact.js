@@ -48,7 +48,9 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div className="contact">
+      <div id='contact'className="contact">
+              <p id='visible'>C</p>
+
         <h2>Contact Me</h2>
         <form action="https://formspree.io/nikseinjob@yahoo.com" method="POST">
           

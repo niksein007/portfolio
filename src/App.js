@@ -1,28 +1,41 @@
 import React from "react";
 import logo from "./images/logo.png";
 import bulbs from "./images/bulbs.jpg";
+import bulbs2 from "./images/bulbs2.jpg";
+import instagram from "./images/instagram.jpg";
+import dice from "./images/dice.jpg";
+import calculator from "./images/calculator.jpg";
+
+
 import Header from "./components/Header";
 import Section from "./components/Section";
 import Footer from "./components/Footer";
+import Card from './components/sectionCom/Card'
+
 import "./appStyle/App.css";
-import { BrowserRouter } from "react-router-dom";
 
 class App extends React.Component {
   state = {
     links: [
       {
         name: "Calculator",
-        url: "https://niksein007.github.io/calculator/"
+        url: "https://niksein007.github.io/calculator/",
+        tools:'React Js',
+        image:calculator
       },
 
       {
         name: "Dice Game",
-        url: "https://niksein007.github.io/dicegame/"
+        url: "https://niksein007.github.io/dicegame/",
+        tools:'Vanila Javascript',
+        image:dice
       },
 
       {
         name: "Instagram clone",
-        url: "https://niksein007.github.io/instagramclone/"
+        url: "https://niksein007.github.io/instagramclone/",
+        tools:'React Js',
+        image:instagram
       }
     ],
 
@@ -38,60 +51,52 @@ class App extends React.Component {
         });
   };
 
-  linksHandler2 = ()=> {
-   this.state.display&& this.setState({
-	   display:false
-   })
-    
+  switchDisplay = () => {
+    //sets the display property to  always false
+    this.setState({
+      display: false
+    });
+  };
+
+  //had to use id instead of className because the svg element does
+  // not allow classname to be  modified
+  active = e => {
+    let anchor = document.getElementById("active");
+    // if anchor is found
+    if (anchor) {
+      anchor.id = anchor.id.replace("active", "");
+    }
+    e.target.id = "active";
+
+    this.switchDisplay();
   };
 
   render() {
-    //taking the url from the link prop and passing into an iframe
-    const iframes = this.state.links.map((link, index) => {
-      return <iframe key={index} title={`num${index}`} src={link.url}></iframe>;
-    });
+   
     //taking the url from the link prop and passing into anchors to be used
-    //in the designs
+    //in the projects
 
-    const designs = this.state.links.map((link, index) => {
+    const projects = this.state.links.map((link, index) => {
       return (
-        <a key={index} href={link.url}>
-          {link.name}
-        </a>
+       <Card  key={index} link={link}/>
       );
     });
 
     return (
-      <div className="App">
-        <BrowserRouter>
-          <div className="appGrid">
-            <div className="header">
-              {" "}
-              <Header
-                linksHandler={this.linksHandler}
-                linksHandler2={this.linksHandler2}
-                display={this.state.display}
-              />{" "}
-            </div>{" "}
-            <div className="section">
-              {" "}
-              <Section
-                iframes={iframes}
-                linksHandler2={this.linksHandler2}
-                designs={designs}
-              />{" "}
-            </div>{" "}
-            <div className="footer">
-              {" "}
-              <Footer />{" "}
-            </div>{" "}
-          </div>{" "}
-        </BrowserRouter>{" "}
+      <div className="App" onScroll={this.scroll}>
+        <Header
+          className="header"
+          linksHandler={this.linksHandler}
+          display={this.state.display}
+          active={this.active}
+          bulbs={bulbs}
+          bulbs2={bulbs2}
+        />
+        <Section className="section" projects={projects}/>
+        <Footer className="footer" />
       </div>
     );
   }
-
-			
 }
 
 export default App;

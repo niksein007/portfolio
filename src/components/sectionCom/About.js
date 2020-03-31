@@ -3,7 +3,8 @@ import "./aboutStyle/About.css";
 
 const About = () => {
   return (
-    <div className="about">
+    <div id="about" className="about">
+      <p id='visible'>A</p>
       <h2>---My Story---</h2>
       <p>
         {" "}
@@ -12,15 +13,16 @@ const About = () => {
         was about rounding up my university education.
       </p>
       <p>
-        Searching for information online lead me to websites such as 
+        Searching for information online lead me to websites such as
         <a href="https://www.freecodecamp.org/"> freecodecamp.org</a>,{" "}
         <a href="https://www.w3schools.com/">w3schools.com</a>, my Favourite{" "}
         <a href="#youtube">Youtube.com </a>
         which has loads of channels such as{" "}
-        <a href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w/featured">acadmind</a>{" "}
-        ,
-        <a href="https://www.youtube.com/user/TechGuyWeb">Traversy media</a> and
-        a whole lot more to help me in coding.
+        <a href="https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w/featured">
+          acadmind
+        </a>{" "}
+        ,<a href="https://www.youtube.com/user/TechGuyWeb">Traversy media</a>{" "}
+        and a whole lot more to help me in coding.
       </p>
       <p>
         I was looking to get a more personal and structured learning in

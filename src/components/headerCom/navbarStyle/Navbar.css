@@ -1,0 +1,105 @@
+nav {
+  display: block;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #372e4b;
+  color: white;
+  height: 50px;
+  border-bottom: 2px solid whitesmoke;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav #menu {
+  font-size: xx-large;
+  margin-left: 80%;
+  margin-top: 10px;
+}
+
+nav #menu:hover {
+  cursor: pointer;
+}
+
+nav .homeIcon {
+  border: none;
+  font-weight: bolder;
+  font-size: xx-large;
+  font-family: Book Antiqua;
+  color: white;
+  letter-spacing: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+}
+
+nav .homeIcon:hover {
+  color: #866666;
+}
+
+nav .showLinksCon {
+  display: block;
+  position: absolute;
+  background-color: brown;
+  margin-top: 50px;
+  width: 100%;
+  height: 33vh;
+}
+
+nav .hideLinksCon {
+  display: none;
+}
+
+nav .links {
+  display: block;
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 0;
+  text-align: left;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin-left: 5%;
+}
+
+nav .links:hover {
+  color: #866666;
+}
+
+nav #active {
+  color: #bbf8bb;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  nav #menu, nav .homeIcon {
+    display: none;
+  }
+  nav #linkCon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: relative;
+    background-color: rgba(55, 46, 75, 0);
+    margin: 0 20%;
+    margin-top: -5px;
+  }
+  nav #linkCon .links {
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    margin-left: 10%;
+    border: none;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */

@@ -1,15 +1,24 @@
 import React from "react";
 import "./projectsStyle/Projects.css";
 
-function Projects(props) {
+const Projects = (props)=> {
+
+  for (let i = 0; i < props.projects.length; i++) {
+    
+  }
   return (
-    <div className="projects">
+    <div id='projects' className="projects">
+      <p id='visible'>p</p>
+      <h2>Projects</h2>
 		<p>
-      Mark Pearce an aspiring web developer kindly peruse throug my project
-      please clik on the menu icon to see the indivial projects</p>
-     <div className='ifCon'>{props.iframes}</div> 
+      Mark Pearce an aspiring web developer kindly peruse through my project
+     </p>
+     
+     <div id='proj' >{props.projects}</div>
+
+     
     </div>
   );
 }
 
-export default Projects;
+export default Projects; 

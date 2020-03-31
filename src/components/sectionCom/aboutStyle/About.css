@@ -1,3 +1,7 @@
+.about #visible {
+  visibility: hidden;
+}
+
 .about h2 {
   text-align: center;
 }

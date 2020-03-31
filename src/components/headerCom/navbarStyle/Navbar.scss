@@ -1,0 +1,126 @@
+
+nav {
+
+    display: block;
+     width: 100%;
+     display: flex;
+     background-color: rgb(55, 46, 75);
+     color: white;
+     height: 50px;
+     border-bottom: 2px solid whitesmoke;
+ 
+ 
+    a{//the Link is a representation of the a tag. anchor can used to target it
+      text-decoration: none;
+    }
+    
+   
+    
+    
+     #menu {
+ font-size: xx-large;
+ margin-left: 80%;
+ margin-top: 10px;
+     }
+     #menu:hover {
+       cursor: pointer;
+     }
+   
+     .homeIcon {
+       border: none;
+       font-weight: bolder;
+       font-size: xx-large;
+       font-family: Book Antiqua;
+       color: white;
+       letter-spacing: 2px;
+       margin-top: 10px;
+       margin-bottom: 10px;
+       margin-left: 5%;
+       
+     }
+     .homeIcon:hover {
+      color:rgb(134, 102, 102);
+     }
+ //this designs the drop down menu
+     .showLinksCon {
+       display: block;
+       position: absolute;
+       // right: 0;
+       background-color: rgba(165, 42, 42, 1);
+       margin-top: 50px;
+       width: 100%;
+       height:33vh;
+     }
+ 
+     .hideLinksCon {
+       display: none;
+     }
+    
+   
+ //this designs the links inside the drop down menu
+   .links {
+     display: block;
+     color: white;
+     margin-top: 15px;
+     margin-bottom: 0;
+   
+     text-align: left;
+     transition: 0.5s;
+ 
+     margin-left: 5%;
+   }
+   .links:hover {
+   color: rgb(134, 102, 102);
+ 
+   }
+ 
+   #active{
+     color: rgb(187, 248, 187);
+   }
+  
+   }
+   .sticky {
+     position: fixed;
+     top: 0;
+     width: 100%;
+   }
+
+   
+@media (min-width: 600px) {
+    nav {
+      #menu, .homeIcon {
+        display: none;
+      }
+      
+  
+     
+  
+      #linkCon {
+        // the linCon id and linksShowCon are at the same level having to overide 
+        //the setting in linkShowCon 
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        background-color: rgba(55, 46, 75, 0.0);
+        margin: 0 20%;
+        margin-top: -5px;
+       
+      
+       
+  
+        .links {
+          font-size: 20px;
+          height: 50px;
+          text-align: center;
+          margin-left: 10%;
+          border: none;
+        }
+       
+      }
+  
+      
+    }
+  }
+  
+ 
+ 
