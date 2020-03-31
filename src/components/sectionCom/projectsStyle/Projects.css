@@ -1,37 +1,19 @@
-.projects {
-  overflow: hidden;
-  margin-top: 55px;
-  text-align: center;
+.projects #visible {
+  visibility: hidden;
 }
 
-.projects p::first-letter {
-  font-size: x-large;
-}
-
-.projects iframe {
-  overflow: hidden;
-  width: 70%;
-  margin: 0 15%;
-  height: 400px;
-  margin-bottom: 10px;
-  border: 1px solid black;
+.projects #proj {
+  width: 250px;
+  margin: auto;
 }
 
 @media (min-width: 600px) {
-  .ifCon {
+  .projects #proj {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-  }
-  .ifCon iframe {
-    overflow-x: hidden;
-    width: 255px;
-    margin-bottom: 10px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=Projects.css.map */

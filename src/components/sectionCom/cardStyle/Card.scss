@@ -1,0 +1,60 @@
+.card {
+  width: 250px;
+  height: 250px;
+  background-color: whitesmoke;
+  margin-left: 5%;
+
+  p,a{
+    
+display: none;  }
+
+p{
+ 
+  text-align: center;
+  margin-top: 15%;
+  font-size: large;
+  font-weight: bold;
+  
+}
+p span{
+  font-size: medium;
+  font-weight: normal;
+display: block;
+color: brown;
+
+}
+
+a{text-decoration: none;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+border: 1px solid brown;
+padding: 5px;
+color: black;
+font-weight: bolder;
+transition: 1s;
+margin-top: 20%;
+
+}
+a:hover{
+color: white;
+background-color: rgb(63, 37, 87);
+  font-size: larger;
+  border: 2px double brown;
+}
+
+.show{
+    width: 250px;
+    height: 250px;
+    display: block;
+}
+.hide{
+    display: none;
+}
+}
+
+
+// @media (min-width: 600px) {
+//   .card {
+//   }
+// }

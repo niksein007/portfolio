@@ -1,136 +1,61 @@
 header {
+  display: block;
+  background-color: rgb(3, 59, 61);
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
 
-  nav {
-    position: fixed;
+  img {
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
     top: 0;
-    width: 100vw;
-    display: flex;
-    background-color: rgba(55, 46, 75, 1);
-
-    color: white;
-    height: 60px;
-   .anchor{
-     text-decoration: none;
-    //  text-align: center;
-   }
-   
-    #menu {
-      
-      overflow: hidden;
-      padding: 0;
-      margin-top: 10px;
-      margin-left: 45%;
-      margin-bottom: 5px;
-      outline: none;
-      border: none;
-      height: 40px;
-      background-color: rgb(245, 242, 240);
-    }
-    #menu:hover {
-      background-color: darkolivegreen;
-      cursor: pointer;
-    }
-    .menuContent{
-      
-      background-color: rgb(0, 0, 0);
-      height: 7px;
-      width: 35px;
-      margin: 7px 0;
-    }
-//styling the span that holds the logo
-    #logo {
-      font-weight: bolder;
-      font-size: xx-large;
-      font-family: Book Antiqua;
-      color: white;
-      letter-spacing: 2px;
-      margin-top: 10px;
-      margin-bottom: 10px;
-      margin-left: 5%;
-      
-    }
-    #logo:hover {
-      background-color: rgb(144, 202, 204);
-    }
-//this designs the drop down menu
-    .showLinksCon {
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+  }
+  //used inline block to so the div of id paragraph doesnt affect the margin top
+  #paragraph {
+    display: inline-block;
+    width: 100%;
+    margin-top: 45vh;
+    p {
       display: block;
-      position: absolute;
-      right: 0;
-      background-color: rgba(165, 42, 42, 0.7);
-      margin-top: 60px;
-      width: 30%;
-      height:100vh;
+      color: whitesmoke;
+      font-size: 31px;
+      text-align: center;
+      margin-top: 0;
+    }
+    p#one {
+      margin-bottom: 1px;
     }
 
-    .hideLinksCon {
-      display: none;
+    p span {
+      color: rgb(248, 196, 196);
     }
-    // .active{
-    //   background-color: red;
-    // }
   }
-//this designs the links inside the drop down menu
-  .links {
+
+  //Note if display is not set to block the margin auto will not center the element
+  #headerAnchor {
     display: block;
-    color: white;
-    margin-top: 5px;
     text-align: center;
-    border: 1px solid whitesmoke;
-    border-left: 1px solid rgba(165, 42, 42, 0.7);
-    border-right: 1px solid rgba(165, 42, 42, 0.7);
-
-    // margin-left: 10%;
-  }
-  .links:hover {
-    background-color: rgb(144, 202, 204);
-  }
-  .one {
-    margin-top: 0;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 25px;
+    width: 200px;
+    margin: auto;
+    background-color: rgba(165, 42, 42, 0);
+    margin-bottom: 24vh;
   }
 }
 
-@media (min-width: 600px) {
-  nav {
-    #menu {
-      display: none;
+@media (min-width:600px){
+  header{
+    a{
+      margin-bottom: 29vh;
     }
-
-    .active{
-      background-color: green;
-    }
-
-    #linkCon {
-      // the linCon id and linksShowCon are at the same level having to overide 
-      //the setting in linkShowCon 
-      display: flex;
-      justify-content: space-between;
-      position: relative;
-      background-color: rgba(55, 46, 75, 0.0);
-      height: auto;
-
-      margin-top: inherit;
-      margin-left: 20%;
-      margin-right: 20%;
-     
-
-      .links {
-        font-size: 25px;
-        height: 50px;
-        text-align: center;
-        margin-left: 10%;
-        padding-top: 5px;
-        border: none;
-      }
-      //styling the first link pHome
-      .one {
-        margin-top: 5px;
-        display: none;
-      }
-    }
-
-    
   }
 }
-
-
