@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1ae281bd9bbf4de523bd555e931a4b56",
+    "revision": "78becc9fdd2977ead02f8f0484c60f32",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "1bedc2f3cff7e26fde98",
+    "revision": "114243fd462a83e3720c",
     "url": "/portfolio/static/css/main.6e3c44ba.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.a13ccc6a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1bedc2f3cff7e26fde98",
-    "url": "/portfolio/static/js/main.050d8d5f.chunk.js"
+    "revision": "114243fd462a83e3720c",
+    "url": "/portfolio/static/js/main.8cd82637.chunk.js"
   },
   {
     "revision": "7107900f59be1fd95810",
@@ -32,11 +32,15 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/bulbs2.10e8c615.jpg"
   },
   {
-    "revision": "c4eff4fa0d929f23f79639d5ace4d4b3",
-    "url": "/portfolio/static/media/dice.c4eff4fa.jpg"
+    "revision": "39e339ac06af97efd9707e1e11f879f5",
+    "url": "/portfolio/static/media/calculator.39e339ac.jpg"
   },
   {
-    "revision": "ca2c2391cb67b5dd86b6d28443edddd7",
-    "url": "/portfolio/static/media/instagram.ca2c2391.jpg"
+    "revision": "605beef8c77ff76eedf57f2f11a35c41",
+    "url": "/portfolio/static/media/dice.605beef8.jpg"
+  },
+  {
+    "revision": "46327ad54ec345bf32c791c65925f111",
+    "url": "/portfolio/static/media/instagram.46327ad5.jpg"
   }
 ]);
