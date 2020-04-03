@@ -1,5 +1,7 @@
 import React from "react";
 import "./projectsStyle/Projects.css";
+import TopHeader from './TopHeader'
+
 
 const Projects = (props)=> {
 
@@ -9,10 +11,8 @@ const Projects = (props)=> {
   return (
     <div id='projects' className="projects">
       <p id='visible'>p</p>
-      <h2>Projects</h2>
-		<p>
-      Mark Pearce an aspiring web developer kindly peruse through my project
-     </p>
+      <TopHeader heading ='PROJECTS' />
+		
      
      <div id='proj' >{props.projects}</div>
 

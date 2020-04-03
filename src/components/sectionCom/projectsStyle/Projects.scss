@@ -3,11 +3,11 @@
     visibility: hidden;
 }
   #proj{
-      width: 250px;
+      width: 350px;
       margin: auto;
   }
 }
-@media(min-width:600px){
+@media(min-width:600px){ 
   .projects{
     #proj{
       display: flex;

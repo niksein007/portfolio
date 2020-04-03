@@ -12,9 +12,46 @@ footer a {
   color: whitesmoke;
 }
 
+footer .arrow {
+  display: block;
+  min-height: 50px;
+  min-width: 30px;
+  margin: auto;
+  margin-top: -50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #cc4646;
+}
+
+footer .arrow:hover {
+  color: #71f0a8;
+}
+
+footer .iconCon {
+  width: 90%;
+  margin: auto;
+}
+
 footer .icon {
-  font-size: xx-large;
+  margin-top: 50px;
+  font-size: 50px;
   margin-left: 20px;
   margin-bottom: 15px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+footer .icon:hover {
+  border-radius: 10px;
+  background-color: cyan;
+  color: #2733a1;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+footer #copyright {
+  padding-bottom: 40px;
+  padding-left: 2%;
+  color: #ac8787;
 }
 /*# sourceMappingURL=Footer.css.map */

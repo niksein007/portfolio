@@ -1,25 +1,23 @@
 .contact {
-  margin-top: 80px;
   height: 100vh;
+  width: 90%;
+  margin: auto;
 }
 
 .contact #visible {
   visibility: hidden;
 }
 
-.contact h2 {
-  text-align: center;
+.contact .forInputs {
+  background-color: slategray;
 }
 
-.contact label {
-  display: inline-block;
-  margin-left: 3%;
-  width: 30%;
-  font-size: x-large;
-}
-
-.contact input, .contact textarea {
-  width: 65%;
+.contact input,
+.contact textarea {
+  font-size: larger;
+  padding-left: 20px;
+  padding-top: auto;
+  width: 100%;
   height: 50px;
   border: 1px solid black;
   margin-top: 5px;
@@ -33,25 +31,36 @@ input[type="submit"] {
   width: 25%;
   margin: auto;
   margin-top: 15px;
-  margin-left: 53%;
+  margin-left: 70%;
+  padding: 5px;
   font-size: large;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: 2px solid;
+}
+
+input[type="submit"]:hover {
+  color: green;
+  background-color: rgba(0, 255, 255, 0.5);
+  border-color: green;
 }
 
 @media (min-width: 600px) {
-  .contact label {
-    display: block;
-    width: 10%;
-    font-size: x-large;
+  .contact {
+    width: 40%;
   }
-  .contact input, .contact textarea {
-    width: 20%;
-    margin-left: 3%;
+  .contact input,
+  .contact textarea {
+    display: block;
+    width: 100%;
     border: 1px solid black;
   }
+  .contact textarea {
+    height: 100px;
+  }
   input[type="submit"] {
-    display: block;
-    margin-left: 3%;
-    width: 10%;
+    margin-left: 70%;
+    width: 25%;
   }
 }
 /*# sourceMappingURL=Contact.css.map */
