@@ -1,37 +1,20 @@
 import React from "react";
 import "./contactStyle/Contact.css";
+import TopHeader from "./TopHeader";
 
 class Contact extends React.Component {
   state = {
     name: "",
     email: "",
     message: "",
-    success:`Your Message has been sent`
+    success: `Your Message has been sent`
   };
   inputHandle = e => {
-    let id = e.target.id;
-    // console.log(id);
-
-    switch (id) {
-      case "name":
+ 
         this.setState({
-          name: e.target.value
-        });
-        break;
-      case "email":
-        this.setState({
-          email: e.target.value
-        });
-        break;
-      case "message":
-        this.setState({
-          message: e.target.value
-        });
-        break;
-
-      default:
-        break;
-    }
+          [e.target.id]:e.target.value
+        })
+     
   };
   // submitHandle = e => {
   //     console.log(this.state.name);
@@ -48,45 +31,50 @@ class Contact extends React.Component {
 
   render() {
     return (
-      <div id='contact'className="contact">
-              <p id='visible'>C</p>
+      <div id="contact" className="contact">
+        <p id="visible">C</p>
 
-        <h2>Contact Me</h2>
-        <form action="https://formspree.io/nikseinjob@yahoo.com" method="POST">
-          
+        <TopHeader heading="CONTACT" />
+        <form action="https://formspree.io/nikseinjob@yahoo.com" method="POST" onSubmit={this.submitHandle}>
+          <div className='forInputs'>
+            {/* <label htmlFor="name">Name:</label> */}
+            <input
+              type="text"
+              placeholder='Name'
 
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={this.state.name}
-            onChange={this.inputHandle}
-          />
+              id="name"
+              name="name"
+              value={this.state.name}
+              onChange={this.inputHandle}
+            />
 
-          <label htmlFor="email">Email:</label>
+            {/* <label htmlFor="email">Email:</label> */}
 
-          <input
-            type="email"
-            id="email"
-            name="_replyto"
-            value={this.state.email}
-            onChange={this.inputHandle}
-          />
+            <input
+            placeholder='Enter Email'
+              type="email"
+              id="email"
+              name="_replyto"
+              value={this.state.email}
+              onChange={this.inputHandle}
+            />
 
-          <label htmlFor="message">Message:</label>
+            {/* <label htmlFor="message">Message:</label> */}
 
-          <textarea
-            id="message"
-            name="messsage"
-            value={this.state.message}
-            onChange={this.inputHandle}
-          />
+            <textarea
+                        placeholder='Your Message'
+
+              id="message"
+              name="messsage"
+              value={this.state.message}
+              onChange={this.inputHandle}
+            />
+          </div>
           <input type="hidden" name="_next" value="/thanks.html" />
 
-          <input type="submit" value="Submit" />
+          <input type="submit" value="Send" />
         </form>
-    {/* <p>{this.state.success}</p> */}
+        {/* <p>{this.state.success}</p> */}
       </div>
     );
   }

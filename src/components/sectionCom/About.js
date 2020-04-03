@@ -1,11 +1,13 @@
 import React from "react";
 import "./aboutStyle/About.css";
+import TopHeader from './TopHeader'
 
 const About = () => {
   return (
     <div id="about" className="about">
       <p id='visible'>A</p>
-      <h2>---My Story---</h2>
+    
+    <TopHeader heading ='ABOUT'/>
       <p>
         {" "}
         I am Mark Pearce a web/software developer from Manchester UK. My

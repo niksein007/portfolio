@@ -1,18 +1,6 @@
 header {
   display: block;
   background-color: #033b3d;
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 100vh;
-}
-
-header img {
-  opacity: 0.5;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
   width: 100%;
   height: 100vh;
 }
@@ -51,7 +39,7 @@ header #headerAnchor {
   width: 200px;
   margin: auto;
   background-color: rgba(165, 42, 42, 0);
-  margin-bottom: 24vh;
+  margin-bottom: 21vh;
 }
 
 header #headerAnchor:hover {
@@ -65,7 +53,13 @@ header .arrow {
 }
 
 @media (min-width: 600px) {
-  header a {
+  header #paragraph {
+    margin-top: 35vh;
+  }
+  header #paragraph p {
+    font-size: 43px;
+  }
+  header #headerAnchor {
     margin-bottom: 29vh;
   }
 }

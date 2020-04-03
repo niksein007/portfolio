@@ -1,20 +1,20 @@
 header {
   display: block;
   background-color: rgb(3, 59, 61);
-  position: relative;
-  z-index: 1;
+  // position: relative;
+  // z-index: 1;
   width: 100%;
   height: 100vh; 
 
-  img {
-    opacity: 0.5;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-  }
+  // img {
+  //   opacity: 0.5;
+  //   position: absolute;  
+  //   left: 0;
+  //   top: 0;
+  //   z-index: -1;
+  //   width: 100%;
+  //   height: 100vh;
+  // }
   //used inline block to so the div of id paragraph doesnt affect the margin top
   #paragraph {
     display: inline-block;
@@ -49,7 +49,7 @@ header {
     width: 200px;
     margin: auto;
     background-color: rgba(165, 42, 42, 0);
-    margin-bottom: 24vh;
+    margin-bottom: 21vh;
   }
 
   #headerAnchor:hover{
@@ -66,7 +66,19 @@ header {
 
 @media (min-width:600px){
   header{
-    a{
+    #paragraph {
+      margin-top: 35vh;
+      p {
+        font-size: 43px;
+      }
+      p#one {
+        // margin-bottom: 1px;
+      }
+  
+     
+    }
+
+    #headerAnchor{
       margin-bottom: 29vh;
     }
   }

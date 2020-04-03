@@ -1,63 +1,82 @@
-.contact{
-    #visible{
-        visibility: hidden;
-    }
-    margin-top: 80px;
-    height: 100vh;
-    h2{
-        text-align: center;
+.contact {
+  // margin-top: 80px;
+
+  height: 100vh;
+  width: 90%;
+  margin: auto;
+
+  #visible {
+    visibility: hidden;
+  }
+
+  .forInputs {
+    background-color: slategray;
+  }
+
+  // label{
+
+  //         // color: red;
+  //         display: inline-block;
+  //         margin-left: 3%;
+  //         width: 30%;
+  //         font-size: x-large;
+  // }
+  input,
+  textarea {
+      font-size: larger;
+    padding-left: 20px;
+    padding-top: auto;
+    width: 100%;
+    height: 50px;
+    border: 1px solid black;
+    margin-top: 5px;
+  }
+  textarea {
+    height: 80px;
+  }
+}
+
+input[type="submit"] {
+  width: 25%;
+  margin: auto;
+  margin-top: 15px;
+  margin-left: 70%;
+  padding: 5px;
+  font-size: large;
+  transition: 0.5s;
+  border: 2px solid;
+  // color: brown;
+}
+input[type="submit"]:hover {
+  color: green;
+  background-color: rgba(0, 255, 255, 0.5);
+  border-color: green;
+}
+
+@media (min-width: 600px) {
+  .contact {
+    width: 40%;
+
+    // label{
+    //     display: block;
+
+    //     // display: inline-block;
+    //     width: 10%;
+    //     font-size: x-large;
+    // }
+    input,
+    textarea {
+      display: block;
+      width: 100%;
+      border: 1px solid black;
     }
 
-    label{
-      
-        
-            // color: red;
-            display: inline-block;
-            margin-left: 3%;
-            width: 30%;
-            font-size: x-large;
+    textarea{
+        height:100px;
     }
-        input,textarea{
-            width: 65%;
-            height: 50px;
-            border: 1px solid black;
-            margin-top: 5px;
-        }
-        textarea{
-            height: 80px;
-
-        }
-       
-    }
-
-   input[type="submit"]{
-        width: 25%;
-        margin: auto;
-        margin-top: 15px;
-        margin-left: 53%;
-        font-size: large;
-        // color: brown;
-    }
-
-
-@media(min-width:600px){
-    .contact{
-        label{
-            display: block;
-
-            // display: inline-block;
-            width: 10%;
-            font-size: x-large;
-        }
-        input,textarea{
-            width: 20%;
-            margin-left: 3%;
-            border: 1px solid black;
-        }
-    }
-    input[type="submit"]{
-display: block;
-        margin-left: 3%;
-        width: 10%;
-    }
+  }
+  input[type="submit"] {
+    margin-left:70% ;
+    width: 25%;
+  }
 }

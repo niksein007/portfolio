@@ -1,4 +1,5 @@
 nav {
+  position: relative;
   display: block;
   width: 100%;
   display: -webkit-box;

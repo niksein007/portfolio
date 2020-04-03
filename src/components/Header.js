@@ -20,7 +20,7 @@ arrow2=()=>{
   render() {
     return (
       <header id='header'> 
-          <img src={this.props.bulbs2} alt="headimg" />
+          {/* <img src={this.props.bulbs2} alt="headimg" /> */}
         
 
         <div id="paragraph"> 

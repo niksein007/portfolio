@@ -10,17 +10,74 @@ class Navbar extends React.Component {
 
     let sticky = navbar.offsetTop;
 
-    if (window.pageYOffset >= sticky) {
+    if (window.pageYOffset > sticky) {
       navbar.classList.add("sticky");
     } else {
       navbar.classList.remove("sticky");
     }
   };
 
+  activeRemover = () => {
+    let x = document.getElementById("active");
+
+    if (x) {
+      x.id = "";
+    }
+  };
+  //this enable the active class to update on scroll
+  floatActive = () => {
+    let height = window.pageYOffset;
+
+    let home = document.getElementsByClassName("home")[0];
+    let about = document.getElementsByClassName("about")[0];
+    let projects = document.getElementsByClassName("projects")[0];
+    let contact = document.getElementsByClassName("contact")[0];
+
+    switch (true) {
+      case height >= 0 && height <570:
+        this.activeRemover();
+        console.log(height);
+
+        home.id = "active";
+
+        break;
+
+      case height >= 570 && height < 920:
+        this.activeRemover();
+        console.log(height);
+
+        about.id = "active";
+
+        break;
+
+      case height >= 920 && height < 1385:
+        this.activeRemover();
+        console.log(height);
+
+        projects.id = "active";
+
+        break;
+
+      case height >= 1385:
+        this.activeRemover();
+        console.log(height);
+
+        contact.id = "active";
+
+        break;
+
+      default:
+        break;
+    }
+  };
+
   render() {
-    //using the window object to make navbar sticky
+    //using the window object to make navbar sticky and animate the active
     window.onscroll = () => {
-      this.sticky(); 
+      this.sticky();
+      this.floatActive();
+      console.log(window.pageYOffset);
+      
     };
 
     return (
@@ -32,19 +89,27 @@ class Navbar extends React.Component {
           id="linkCon"
           className={this.props.display ? "showLinksCon" : "hideLinksCon"}
         >
-          <a href="#header" className="links one " onClick={this.props.active}>
+          <a href="#header" className="links home " onClick={this.props.active}>
             HOME
           </a>
 
-          <a href="#projects" className="links" onClick={this.props.active}>
-            PORTFOLIO
-          </a>
-
-          <a href="#about" className="links" onClick={this.props.active}>
+          <a href="#about" className="links about" onClick={this.props.active}>
             ABOUT
           </a>
 
-          <a href="#contact" className="links" onClick={this.props.active}>
+          <a
+            href="#projects"
+            className="links projects"
+            onClick={this.props.active}
+          >
+            PORTFOLIO
+          </a>
+
+          <a
+            href="#contact"
+            className="links contact"
+            onClick={this.props.active}
+          >
             CONTACT
           </a>
         </div>
