@@ -43,9 +43,9 @@ class Navbar extends React.Component {
         break;
 
       case height >= 570 && height < 920:
-        this.activeRemover();
+        this.activeRemover(); 
         console.log(height);
-
+        about.classList.add('topHeaderAbout')
         about.id = "active";
 
         break;
@@ -53,6 +53,7 @@ class Navbar extends React.Component {
       case height >= 920 && height < 1385:
         this.activeRemover();
         console.log(height);
+        projects.classList.add('topHeaderProjects')
 
         projects.id = "active";
 
@@ -61,6 +62,7 @@ class Navbar extends React.Component {
       case height >= 1385:
         this.activeRemover();
         console.log(height);
+        contact.classList.add('topHeaderContact')
 
         contact.id = "active";
 
@@ -89,7 +91,7 @@ class Navbar extends React.Component {
           id="linkCon"
           className={this.props.display ? "showLinksCon" : "hideLinksCon"}
         >
-          <a href="#header" className="links home " onClick={this.props.active}>
+          <a href="#header"  className="links home " onClick={this.props.active}>
             HOME
           </a>
 

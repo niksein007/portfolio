@@ -39,7 +39,7 @@ const About = () => {
         little patience, research and asking for help form fellow student's and
         teacher's solves any problem{" "}
       </p>
-    </div>
+    </div> 
   );
 };
 

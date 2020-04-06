@@ -20,8 +20,16 @@ arrow2=()=>{
   render() {
     return (
       <header id='header'> 
-          {/* <img src={this.props.bulbs2} alt="headimg" /> */}
-        
+        {/* <ul className='animate'>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+
+        </ul> */}
 
         <div id="paragraph"> 
           <p id="one">
@@ -31,7 +39,7 @@ arrow2=()=>{
         </div>
 
         <a 
-        id='headerAnchor' 
+        id='headerAnchor'  
         href='#about' 
         onMouseOver={this.arrow}
         onMouseOut={this.arrow2}

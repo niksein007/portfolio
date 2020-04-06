@@ -1,6 +1,17 @@
 .contact {
   // margin-top: 80px;
 
+  .topHeaderContact{
+    position: relative;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+ }
+
+ @keyframes example {
+    0%   { left:600px; top:0px;}
+    100% {left:0px; top:0px;}
+  }
   height: 100vh;
   width: 90%;
   margin: auto;
