@@ -12,7 +12,7 @@ arrow2=()=>{
   arrow =()=>{
     let arrow = document.getElementById('arrow')
 
-      arrow.classList.add('arrow')
+      arrow.classList.add('arrow') 
 
  
 
@@ -20,7 +20,10 @@ arrow2=()=>{
   render() {
     return (
       <header id='header'> 
-        {/* <ul className='animate'>
+        <ul className='animate'>
+          <li></li>
+          <li></li>
+          <li></li>
           <li></li>
           <li></li>
           <li></li>
@@ -29,8 +32,9 @@ arrow2=()=>{
           <li></li>
           <li></li>
 
-        </ul> */}
 
+        </ul>
+<div id='space'></div>
         <div id="paragraph"> 
           <p id="one">
             Hello. i'am <span>Mark Pearce</span>.

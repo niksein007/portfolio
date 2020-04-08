@@ -1,38 +1,120 @@
 header {
   display: block;
   background-color: rgb(3, 59, 61);
-
+  overflow: hidden;
   width: 100%;
   height: 100vh; 
-
-  // .animate{
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: 100vh;
-
-  //   li{
-  //     position: absolute;
-  //     list-style-type: none;
-  //     display: block;
-  //     width: 25px ;
-  //     height: 25px;
-  //     background-color: snow;
-  //   }
-  // }
+  animation: head 15s linear infinite ;
 
 
-  #paragraph {
-    display: inline-block;
+  .animate{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    margin-top: 45vh;
+    height: 100vh;
+
+    li{
+      position: absolute;
+      list-style-type: none;
+      display: block;
+      width: 5px ;
+      height: 125px;
+      background-color: snow;
+      animation: animate 5s linear infinite ;
+      bottom: -10px;
+    &:nth-child(1){
+      left: 15%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 0ms;
+      animation-duration: 5s;
+    }
+    
+    &:nth-child(2){
+      left: 15%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 100ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(3){
+      left: 15%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 200ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(4){
+      left: 15%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 300ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(5){
+      left: 15%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 400ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(6){
+      left: 85%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 0ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(7){
+      left: 85%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 100ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(8){
+      left: 85%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 200ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(9){
+      left: 85%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 300ms;
+      animation-duration: 5s;
+
+    }
+    &:nth-child(10){
+      left: 85%;
+      width: 5px;
+      height: 150px;
+      animation-delay: 400ms;
+      animation-duration: 5s;
+
+    }
+  }
+  }
+  #space{
+    margin-top: 40vh;
+  }
+  #paragraph {
     p {
       display: block;
       color: whitesmoke;
       font-size: 31px;
       text-align: center;
-      margin-top: 0;
+      margin-top: 0vh;
     }
     p#one {
       margin-bottom: 1px;
@@ -45,6 +127,7 @@ header {
 
   //Note if display is not set to block the margin auto will not center the element
   #headerAnchor {
+    position: relative;
     display: block;
     text-align: center;
     text-decoration: none;
@@ -56,7 +139,7 @@ header {
     width: 200px;
     margin: auto;
     background-color: rgba(165, 42, 42, 0);
-    margin-bottom: 21vh;
+    margin-bottom: 32vh;
   }
 
   #headerAnchor:hover{
@@ -68,9 +151,43 @@ header {
     display: inline-block;
     transform:rotate(90deg);
   }
- 
+
 }
 
+@keyframes animate {
+  0%{
+    transform: translateY(0) rotateZ(0deg);
+    border-radius: 0;
+    opacity: 1;
+  }
+  25%{
+    background-color: gold;
+  }
+
+  50%{
+    background-color: gold;
+  }
+  100%{
+    transform: translateY(-1000px) rotateZ(1440deg);
+    opacity: 0.5;
+    background-color: cadetblue;
+  }
+}
+
+
+@keyframes head {
+  0%{
+    background-color: rgb(3, 59, 61);
+  }
+  
+
+  50%{
+    background-color: rgb(170, 168, 17);
+  }
+  100%{
+    background-color: rgb(3, 59, 61);
+  }
+}
 @media (min-width:600px){
   header{
     #paragraph {
@@ -86,7 +203,7 @@ header {
     }
 
     #headerAnchor{
-      margin-bottom: 29vh;
+      margin-bottom: 24.5vh;
     }
   }
 }

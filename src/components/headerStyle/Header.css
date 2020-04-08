@@ -1,14 +1,135 @@
 header {
   display: block;
   background-color: #033b3d;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  -webkit-animation: head 15s linear infinite;
+          animation: head 15s linear infinite;
+}
+
+header .animate {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100vh;
 }
 
-header #paragraph {
-  display: inline-block;
-  width: 100%;
-  margin-top: 45vh;
+header .animate li {
+  position: absolute;
+  list-style-type: none;
+  display: block;
+  width: 5px;
+  height: 125px;
+  background-color: snow;
+  -webkit-animation: animate 5s linear infinite;
+          animation: animate 5s linear infinite;
+  bottom: -10px;
+}
+
+header .animate li:nth-child(1) {
+  left: 15%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(2) {
+  left: 15%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(3) {
+  left: 15%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(4) {
+  left: 15%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(5) {
+  left: 15%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(6) {
+  left: 85%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 0ms;
+          animation-delay: 0ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(7) {
+  left: 85%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(8) {
+  left: 85%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(9) {
+  left: 85%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header .animate li:nth-child(10) {
+  left: 85%;
+  width: 5px;
+  height: 150px;
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+header #space {
+  margin-top: 40vh;
 }
 
 header #paragraph p {
@@ -16,7 +137,7 @@ header #paragraph p {
   color: whitesmoke;
   font-size: 31px;
   text-align: center;
-  margin-top: 0;
+  margin-top: 0vh;
 }
 
 header #paragraph p#one {
@@ -28,6 +149,7 @@ header #paragraph p span {
 }
 
 header #headerAnchor {
+  position: relative;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -39,7 +161,7 @@ header #headerAnchor {
   width: 200px;
   margin: auto;
   background-color: rgba(165, 42, 42, 0);
-  margin-bottom: 21vh;
+  margin-bottom: 32vh;
 }
 
 header #headerAnchor:hover {
@@ -52,6 +174,72 @@ header .arrow {
           transform: rotate(90deg);
 }
 
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotateZ(0deg);
+            transform: translateY(0) rotateZ(0deg);
+    border-radius: 0;
+    opacity: 1;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: gold;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotateZ(1440deg);
+            transform: translateY(-1000px) rotateZ(1440deg);
+    opacity: 0.5;
+    background-color: cadetblue;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotateZ(0deg);
+            transform: translateY(0) rotateZ(0deg);
+    border-radius: 0;
+    opacity: 1;
+  }
+  25% {
+    background-color: gold;
+  }
+  50% {
+    background-color: gold;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotateZ(1440deg);
+            transform: translateY(-1000px) rotateZ(1440deg);
+    opacity: 0.5;
+    background-color: cadetblue;
+  }
+}
+
+@-webkit-keyframes head {
+  0% {
+    background-color: #033b3d;
+  }
+  50% {
+    background-color: #aaa811;
+  }
+  100% {
+    background-color: #033b3d;
+  }
+}
+
+@keyframes head {
+  0% {
+    background-color: #033b3d;
+  }
+  50% {
+    background-color: #aaa811;
+  }
+  100% {
+    background-color: #033b3d;
+  }
+}
+
 @media (min-width: 600px) {
   header #paragraph {
     margin-top: 35vh;
@@ -60,7 +248,7 @@ header .arrow {
     font-size: 43px;
   }
   header #headerAnchor {
-    margin-bottom: 29vh;
+    margin-bottom: 24.5vh;
   }
 }
 /*# sourceMappingURL=Header.css.map */

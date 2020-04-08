@@ -31,12 +31,12 @@ class App extends React.Component {
         image:dice
       },
 
-      {
-        name: "Instagram clone",
-        url: "https://niksein007.github.io/instagramclone/",
-        tools:'React Js',
-        image:instagram
-      }
+      // {
+      //   name: "Instagram clone",
+      //   url: "https://niksein007.github.io/instagramclone/",
+      //   tools:'React Js',
+      //   image:instagram
+      // }
     ],
 
     display: false
