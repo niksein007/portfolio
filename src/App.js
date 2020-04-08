@@ -29,6 +29,7 @@ class App extends React.Component {
         url: "https://niksein007.github.io/dicegame/",
         tools:'Vanila Javascript',
         image:dice
+
       },
 
       // {
