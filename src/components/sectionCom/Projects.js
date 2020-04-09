@@ -5,7 +5,7 @@ import TopHeader from './TopHeader'
 
 const Projects = (props)=> {
 
-  for (let i = 0; i < props.projects.length; i++) {
+  for (let i = 0; i < props.projects.length; i++) { 
     
   }
   return (

@@ -1,5 +1,6 @@
 .projects{
-
+  margin-left: -10%;
+  
   .topHeaderProjects{
     position: relative;
     animation-name: example;
@@ -21,6 +22,7 @@
 }
 @media(min-width:600px){ 
   .projects{
+    margin-left: 0;
     #proj{
       display: flex;
       justify-content: space-around;

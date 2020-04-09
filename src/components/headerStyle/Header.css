@@ -30,7 +30,7 @@ header .animate li {
 }
 
 header .animate li:nth-child(1) {
-  left: 15%;
+  left: 23%;
   width: 5px;
   height: 150px;
   -webkit-animation-delay: 0ms;
@@ -40,7 +40,7 @@ header .animate li:nth-child(1) {
 }
 
 header .animate li:nth-child(2) {
-  left: 15%;
+  left: 23%;
   width: 5px;
   height: 150px;
   -webkit-animation-delay: 100ms;
@@ -50,7 +50,7 @@ header .animate li:nth-child(2) {
 }
 
 header .animate li:nth-child(3) {
-  left: 15%;
+  left: 23%;
   width: 5px;
   height: 150px;
   -webkit-animation-delay: 200ms;
@@ -60,7 +60,7 @@ header .animate li:nth-child(3) {
 }
 
 header .animate li:nth-child(4) {
-  left: 15%;
+  left: 23%;
   width: 5px;
   height: 150px;
   -webkit-animation-delay: 300ms;
@@ -70,7 +70,7 @@ header .animate li:nth-child(4) {
 }
 
 header .animate li:nth-child(5) {
-  left: 15%;
+  left: 23%;
   width: 5px;
   height: 150px;
   -webkit-animation-delay: 400ms;
