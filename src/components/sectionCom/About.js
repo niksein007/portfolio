@@ -31,7 +31,8 @@ const About = () => {
         Manchester and discovered{" "}
         <a href="https://wearecodenation.com/">Code Nation</a>. They run a
         tweleve weeks master coding boot camp for aspiring software developers.
-        I enrolled and am presently at the final stages of the boot camp
+        I have just concluded the coding boot camp and am eager to continue creating 
+        responsive and dynamic website and also improve and develope new skills.
       </p>
       <p>
         I have found coding/programing to be fun(can build fantastic things),
